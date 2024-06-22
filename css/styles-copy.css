@@ -1,6 +1,6 @@
 /* CSS File */
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     display: block;
     margin: 0;
     padding: 0;
@@ -13,7 +13,11 @@ body {
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     color: black;
-    background-color: #093145;
+    background-color: #ffffff;
+}
+img {
+    max-width: 50vh;  /* Adjust the image size to prevent it from exceeding the container */
+    max-height: 50vh;
 }
 /* Header CSS */
 ul {
@@ -52,17 +56,6 @@ h1 a, .top-nav a {
 .top-nav a {
     text-transform: uppercase;
 }
-.profile{
-    margin: 20px 20px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-    gap: 25px;
-}
-.profile-img{
-    flex: 0;
-}
 /* Portfolio CSS */
 .container {
     max-width: 1100px;
@@ -70,17 +63,16 @@ h1 a, .top-nav a {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
-.container img {
-    max-width: 400px;  /* Adjust the image size to prevent it from exceeding the container */
-    height: auto;     /* Maintain the aspect ratio */
-}
 .col {
     margin: 10px;
     min-height: 250px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     letter-spacing: 1px;
-    padding-top: 5px;
+    /* padding-top: 5px; */
+}
+.col img{
+    align-self: center;
 }
 .box-1 {
     background-color: #093145;
@@ -89,10 +81,10 @@ h1 a, .top-nav a {
     background-color: #3C6478;
 }
 .box-3 {
-        background-color: #107896;
+    background-color: #107896;
 }
 .box-4 {
-background-color: #829356;
+    background-color: #829356;
 }
 .box-5 {
     background-color: #C2571A;
@@ -130,44 +122,5 @@ footer {
     }
     .top-nav a {
         color: #fff;
-    }
-    /* Profile div */
-    .profile {
-        display: flex;
-        margin: 50px;
-        border: 25px;
-        padding: 25px;
-        justify-content: space-evenly;
-        flex-flow: row-reverse;
-        align-items: center;
-        gap: 20px;
-        flex-direction: row-reverse;
-    }
-    /* Portfolio */
-
-    .col {
-        flex-basis: calc(50% - 20px);
-    }
-    /* Footer */
-    .full {
-        display: inline-block;
-        margin-left: 20px;
-    }
-}
-@media (min-width: 1024px) {
-    /* Top Nav */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .top-nav,
-    .top-nav li {
-        width: initial;
-        margin-bottom: 0;
-    }
-    /* Portfolio */
-    .col {
-        order: 4;
     }
 }
