@@ -1,173 +1,209 @@
-/* CSS File */
-* {
-    /* box-sizing: border-box; */
-    display: block;
-    margin: 0;
-    padding: 0;
+/* CSS File  */
+* { /* Sets the font and box sizing for the whole page */
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
-body {
+body { /* Sets the background color and margins for the entire body */
+    background: #FAFAFA;
     margin: 0 auto;
-    max-width: 1024px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    background-color: #093145;
 }
-/* Header CSS */
-ul {
-    list-style: none;
-    padding-left: 0;
+a:hover { /* Creates fun interaction when hovering over links */
+    opacity: 0.5;
 }
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-nav {
-    font-family: "Roboto", Arial, Verdana;
-    font-weight: 400;
-    letter-spacing: .05em;
-    background-color: #829356;
-    padding: 25px;
-}
-h1, .top-nav {
+h1, h2, h3, p { /* Setting the text color and alignment for h1, h2, h3, p elements */
+    color: #373737;
     text-align: center;
 }
-.top-nav, .top-nav li{
+h1 { /* Modifying h1's to stand out with Open Sans */
+    font-family: "Open Sans", sans-serif;
+}
+h2 { /* Transforming h2 elements to uppercase, a bit a margin, and increased font size */
+    text-transform: uppercase;
+    font-size: 16px; 
+    margin: 20px 0;
+}
+h3 { /* Setting the font weight for h3 elements in the portfolio */
+    font-weight: 400;
+}
+header, main, nav ul, #portfolio, #skills { /* Set elements to flexbox, wrapping the elements, in a column, centering the containers, and centering the container items */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header { /* Specific header padding */
+    padding: 0 20px;
+}
+nav { /* Ensure nav elements span the width of the content area */
     width: 100%;
 }
-h1 a, .top-nav a {
-    color: #000;
+nav ul { /* Removes list styling from nav list, sets margin and padding to 0, includes a 5px gap, and aligns text to center */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+    text-align: center;
 }
-.top-nav {
-    margin-top: 30px;
-}
-.top-nav li {
-    padding: 10px 0;
-    margin: 5px auto;
+nav ul > li { /* Targets nav li items with a different background, width 100%, and 10px padding */
     background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
 }
-.top-nav a {
+nav ul > li > a, footer p, footer a { /* Targets li links in the nav + p and a in the footer: removing the text dec, changing the color, increasing the font weight and uppercase */
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: 700;
     text-transform: uppercase;
 }
-.profile{
-    margin: 20px 20px;
+#profile { /* Target profile id: change to flexbox with  0 padding on top/bottom but 20px on left/right, align text center, and top margin of 50px*/
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-    gap: 25px;
-}
-.profile-img{
-    flex: 0;
-}
-/* Portfolio CSS */
-.container {
-    max-width: 1100px;
-    padding: 10px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-}
-.container img {
-    max-width: 400px;  /* Adjust the image size to prevent it from exceeding the container */
-    height: auto;     /* Maintain the aspect ratio */
-}
-.col {
-    margin: 10px;
-    min-height: 250px;
-    color: white;
-    text-align: center;
-    letter-spacing: 1px;
-    padding-top: 5px;
-}
-.box-1 {
-    background-color: #093145;
-}
-.box-2 {
-    background-color: #3C6478;
-}
-.box-3 {
-        background-color: #107896;
-}
-.box-4 {
-background-color: #829356;
-}
-.box-5 {
-    background-color: #C2571A;
-}
-.box-6 {
-    background-color: #9A2617;
-}
-/* Footer CSS */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
     padding: 0 20px;
-    height: 100px;
-    background-color: #107896;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 50px;
 }
-.full {
+#profile p, 
+#contact p { /* Alters p elements of profile(id) and contact(id) to a different font */
+    color: #868686;
+}
+#profile img { /* Sets max width of the proilfe(id) image to 80% and 0 maring on top/bottom with auto on right/left */
+    max-width: 80%;
+    margin: 0 auto;
+}
+#portfolio { /* Targets profile(id) with background color, wrap, justify with space between, padding around of 20px, and top amrting of 30px */
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 30px;
+}
+#portfolio p { /* Targets p elements in the profile(id) with a new color and font size of 14px */
+    color: #4a4a4a;
+    font-size: 14px;
+}
+#portfolio img { /* Targets img elements in the portfolio(id) to a width of 100%, height of auto, and margin top/bottom of 0 but right/left of auto */
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#portfolio div { /* Targets div elements in portfolio(id) to center the text and padding top/bottom of 15px but right/left of 0 */
+    text-align: center;
+    padding: 15px 0;
+}
+#skills { /* Set skills(id) margin to: top 50px, right/left 0, and bottom to 0 */
+    margin: 50px 0 0;
+}
+#skills ul { /* For the skills)id) ul elements, remove the list styling, set padding all-around to 0, and align text of the list to center */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+#skills li { /* Set skills)id) list items padding to top/bottom of 10px and right/left to 0 */
+    padding: 10px 0;
+}
+#contact { /* Set contact(id) padding top/bottom to 0 and right/left to 20px, set margin top to 50px with right/left to 0 and bottom to 0 */
+    padding: 0 20px;
+    margin: 50px 0 0;
+}
+#contact a { /* Set the a(link) elements in the contact(id) with no decoration, new color of #868686, bold font-weight, and left margin of 10px */
+    text-decoration: none;
+    color: #868686;
+    font-weight: bold;
+    margin-left: 10px;
+}
+footer { /* Change the footer element margin top/bottom to 50px with right/left 0 and the bottom as 0, font-size to 14px, padding top/bottom is 0 with right/left at 20px */
+    margin: 50px 0 0;
+    font-size: 14px;
+    padding: 0 20px;
+}
+footer div { /* Div's in the footer has a solid 2px border with a #EEE color, display is flexbox and the direction is row, width is 100% of the element, aligning items center, justify the content as space-between, padding is top/bottom 15px and right/left of 0 */
+    border-top: 2px solid #EEE;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+footer ul { /* Do not display the footer ul */
     display: none;
 }
-/* Media Queries */
-@media (min-width: 768px) {
-    /* Top Nav */
-    .top-nav {
+@media screen and (min-width: 768px) { /* CSS Modifications when the min-width of the browser is 768px */
+    nav ul, 
+    #profile, 
+    #portfolio { /* Set the nav list, profile)id), and portfolio(id) flex direction to row */
+        flex-direction: row;
+    }
+    nav ul { /* Give the nav list a 30px gap */
+        gap: 30px;
+    }
+    nav ul > li { /* Resets the width, padding, and background color of the nav list items */
+        width: unset;
+        padding: unset;
+        background-color: unset;
+    }
+    #profile { /* Set profile(id) padding top/bottom to 0 and right/left to 30px, set gap to 20px */
+        padding: 0 30px;
+        gap: 20px;
+    }
+    #profile p { /* Set p elements in profile(id) to align text to teh left and the top margin to 0 */
+        text-align: left;
         margin-top: 0;
     }
-    .top-nav li {
-        display: inline-block;
-        width: auto;
-        margin-right: 15px;
-        background-color: transparent;
+    #profile img { /* Set the img element in profile(id) with a width max of 80%, margin top/bottom is 0 and right/left to auto */
+        max-width: 80%;
+        margin: 0 auto;
     }
-    .top-nav li:last-child {
-        margin-right: 0;
-    }
-    .top-nav a {
-        color: #fff;
-    }
-    /* Profile div */
-    .profile {
-        display: flex;
-        margin: 50px;
-        border: 25px;
-        padding: 25px;
-        justify-content: space-evenly;
-        flex-flow: row-reverse;
-        align-items: center;
-        gap: 20px;
-        flex-direction: row-reverse;
-    }
-    /* Portfolio */
 
-    .col {
-        flex-basis: calc(50% - 20px);
+    #portfolio { /* Set top margin of portfolio(id) to 65px */
+        margin-top: 65px;
     }
-    /* Footer */
-    .full {
-        display: inline-block;
-        margin-left: 20px;
+
+    #portfolio h2 { /* Alter flex basis of h2 elements in portfolio(id) to 100% */
+        flex-basis: 100%;
     }
-}
-@media (min-width: 1024px) {
-    /* Top Nav */
-    nav {
+
+    #portfolio div { /* Alter flex basis of div elements in portfolio(id) to 49% */
+        flex-basis: 49%;
+    }
+    #contact > p { /* p elements specifically in the contact(id) are set to a width of 60%, left margin is auto and right margin is auto */
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer > div > a { /* a elements in the div of the footer have their display configuration removed */
+        display: none;
+    }
+    footer ul { /* ul of the footer adds a display of flex to the container, removing the list styling, gap is set to 30px, and all-around padding is set to 0 */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .top-nav,
-    .top-nav li {
-        width: initial;
-        margin-bottom: 0;
-    }
-    /* Portfolio */
-    .col {
-        order: 4;
+        list-style-type: none;
+        gap: 30px;
+        padding: 0;
     }
 }
+@media screen and (min-width: 1024px) { /* CSS Modifications when the min-width of the browser is 1024px  */
+    body { /* Override the width max of the body to 945px, set margin top to 50px with right/left of auto and bottom of 0px */
+        max-width: 945px;
+        margin: 50px auto 0px;
+    }
+    header { /* Modify header to justify content with space-between, flex direction of row, and padding top/bottom at 0 then right/left 30px */
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 30px;
+    }
+    nav { /* Unset the width of the nav */
+        width: unset;
+    }
+    nav ul { /* Set the nav list to a flex direction of row */
+        flex-direction: row;
+    }
+    #profile { /* Tells the profile(id) that all available space is placed between the first and last items, pushing both items to opposite edges of the container */
+        justify-content: space-between;
+    }
+    #portfolio div { /* Tells the div elements of the portfolio(id) to grow to 33% of the parent's width */
+        flex-basis: 33%;
+    }
+}
+/*  */

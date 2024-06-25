@@ -9,82 +9,138 @@
   <link href="css/styles-copy.css" rel="stylesheet">
   <title>Ka'ohu Ah Yo's Profile</title>
 </head>
-  <header>
-    <nav>
+  <body>
+    <header>
+
       <h1><a href="#">Ka'ohu Ah Yo</a></h1>
-        <ul class="top-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    <section class="profile">
-      <img src="images/responsive-layout-profile.png" alt="Ka'ohu profile pic" class="profile-img">
-      <p class="profile-p">Hi! I'm a front end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-    </section>
-  </header>
-  <main>
-    <p>PORTFOLIO</p>
-    <div class="container"> <!--Start of Container-->
-      <div class="col box-1">
-        <img src="images/portfolio-1.png" alt="">
-        <h2>
-          Marketing Page
-        </h2>
-        <p>This project shows the front page of a marketing website meant for a specific business I'm interested in</p>
-      </div>
-      <div class="col box-2">
-        <img src="images/portfolio-2.png" alt="">
-        <h2>
-          Search Page
-        </h2>
-        <p>This project searches through a specific database to find information that the user is trying to look up</p>
-      </div>
-      <div class="col box-3">
-        <img src="images/portfolio-3.png" alt="">
-        <h2>
-          Travel Page
-        </h2>
-        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-      </div>
-      <div class="col box-4">
-        <img src="images/portfolio-4.png" alt="">
-        <h2>
-          Map of Favorite Spots
-        </h2>
-        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour</p>
-      </div>
-      <div class="col box-5">
-        <img src="images/portfolio-5.png" alt="">
-        <h2>
-          Photo Gallery
-        </h2>
-        <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
-      </div>
-      <div class="col box-6">
-        <img src="images/portfolio-6.png" alt="">
-        <h2>
-          Calculator
-        </h2>
-        <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
-      </div>
-    </div> <!--End of Container-->
-      <div class="contact">
-        <h2>Contact</h2>
-        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p>Phone +1 (503)439-1234</p>
-        <p>Email kahyo@yoursite.com</p>
-      </div>
-   </main>
-  <footer>
+
     <nav>
-      <h2>Ka'ohu Ah Yo</h2>
-        <ul class="footer-nav">
-          <li class="top"><a href="#top">Back to Top</a></li>
-          <li class="full"><a href="#top">Home</a></li>
-          <li class="full"><a href="#portfolio">Portfolio</a></li>
-          <li class="full"><a href="#contact">Contact</a></li>
+
+      <ul class="top-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+    <main>
+      <section id="profile">
+
+        <div class="bio-img">
+          <img src="images/responsive-layout-profile.png" alt="Ka'ohu profile pic" >
+        </div>
+  
+        <p class="bio">Hi! I'm a front end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+      
+      </section>
+
+      <h2 id="portfolio" class="portfolio">PORTFOLIO</h2>
+      <div class="container">
+
+        <div class="col box-1">
+          
+          <img src="images/portfolio-1.png" alt="Marketing image" class="project-images">
+          <h2>Marketing Page</h2>
+          <p>This project shows the front page of a marketing website meant for a specific business I'm interested in</p>
+
+        </div>
+
+        <div class="col box-2">
+
+          <img src="images/portfolio-2.png" alt="Search Image" class="project-images">
+          <h2>Search Page</h2>
+          <p>This project searches through a specific database to find information that the user is trying to look up</p>
+
+        </div>
+
+        <div class="col box-3">
+
+          <img src="images/portfolio-3.png" alt="Travel Image" class="project-images">
+          <h2>Travel Page</h2>
+          <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+
+        </div>
+
+        <div class="col box-4">
+
+          <img src="images/portfolio-4.png" alt="Map Image" class="project-images">
+          <h2>Map of Favorite Spots</h2>
+          <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour</p>
+        </div>
+        
+        <div class="col box-5">
+
+          <img src="images/portfolio-5.png" alt="Photo Gallery Image" class="project-images">
+          <h2>Photo Gallery</h2>
+          <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos</p>
+
+        </div>
+
+        <div class="col box-6">
+
+          <img src="images/portfolio-6.png" alt="Calculator Image" class="project-images">
+          <h2>Calculator</h2>
+          <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
+
+        </div>
+
+      </div>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Python</li>
+            <li>CSS</li>
+            <li>SQL</li>
         </ul>
-      </nav>
-  </footer>
-  </html>
+    </section>
+      <section>
+        <h2 id="contact" class="my-info">Contact</h2>
+          
+        <div class="contact-statement">
+          <p >If you're interested in connnecting with me or would like to more information and discuss some projects. 
+                  I'd love to chat more please see my contact information below. </p>
+        </div>
+
+        <div>
+
+          <p class="phone">Phone: 503-321-7654</p>
+
+        </div>
+
+        <div>
+
+          <p class="email">Email: email@proahyo.com</p>
+          
+        </div>
+      </section>
+    </main>
+      <footer>
+        <nav class="footer-nav">
+
+          <h2>Ka'ohu Ah Yo</h2>
+
+            <ul class="footer-nav mobile-footer-nav">
+
+              <li class="top"><h4><a href="#top">Back to Top</a></h4></li>
+
+            </ul>
+            
+            <ul class="footer-nav tablet-footer-nav">
+
+              <li class="full"><h4><a href="#top">Home</a></h4></li>
+              <li class="full"><h4><a href="#portfolio">Portfolio</a></h4></li>
+              <li class="full"><h4><a href="#contact">Contact</a></h4></li>
+
+            </ul>
+
+          </nav>
+
+      </footer>
+
+    
+  </body>
+</html>
